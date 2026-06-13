@@ -21,5 +21,112 @@
     <script src="slider.js" defer></script>
     <title>Shelter | main page</title>
   </head>
-  <body class="main-page"></body>
+  <body class="main-page">
+    <header class="header">
+      <div class="header__content container flex">
+        <div class="header__logo">
+          <a class="header__logotitle clr-primary" href="index.html"
+            >Cozy House</a
+          >
+          <span class="header__logosubtitle clr-light--xl"
+            >Shelter for pets in Boston</span
+          >
+        </div>
+        <div class="header__background">
+          <nav class="header__navcontainer flex">
+            <ul class="header__navlist">
+              <li>
+                <a class="header__navitem clr-dark--s active" href="index.html"
+                  >About the shelter</a
+                >
+              </li>
+              <li>
+                <a class="header__navitem clr-dark--s" href="pets/index.html"
+                  >Our pets</a
+                >
+              </li>
+              <li>
+                <a class="header__navitem clr-dark--s" href="#help"
+                  >Help the shelter</a
+                >
+              </li>
+              <li>
+                <a class="header__navitem clr-dark--s" href="#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="header__burger header__burger--hiden">
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero flex">
+        <div class="hero__content container">
+          <div class="hero__text hero__text_flow">
+            <h1 class="hero__text__title">Not only people need a house</h1>
+            <p class="hero__text__description">
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
+              anybody else in the world, you will see!
+            </p>
+            <a href="#pets" class="btn btn__hero">Make a friend</a>
+          </div>
+          <div class="hero__img"></div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container container">
+          <div class="about__img__box">
+            <div class="about__img"></div>
+          </div>
+          <div class="about__content">
+            <h2 class="about__title">About the shelter “Cozy House”</h2>
+            <p class="about__text">
+              Currently we have 121 dogs and 342 cats on our hands and
+              statistics show that only 20% of them will find a family. The
+              others will continue to live with us and will be waiting for a
+              lucky chance to become dearly loved.
+            </p>
+            <p class="about__text">
+              We feed our wards with the best food and make sure that they do
+              not get sick, feel comfortable (including psychologically) and
+              well. We are supported by 87 volunteers and 28 employees of
+              various skill levels. About 12% of the animals are taken by the
+              shelter staff. Taking care of the animals, they become attached to
+              the pets and would hardly ever leave them alone.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="pets" class="pets">
+        <div class="pets__container container">
+          <h2 class="section__title pets-h2">
+            Our friends who are&nbsp;looking for a house
+          </h2>
+          <div class="pets__slider__btns">
+            <div class="slider__btn" id="slider__btn-left">
+              <img src="assets/img/arrow.svg" alt="" />
+            </div>
+            <div class="slider__btn slider__btn-right" id="slider__btn-right">
+              <img src="assets/img/arrow.svg" alt="" />
+            </div>
+          </div>
+          <div class="slider__wrapper">
+            <div class="pets__slider" id="pets__slider">
+              <div class="pets__all pets__group1"></div>
+              <div class="pets__all pets__group2"></div>
+              <div class="pets__all pets__group3"></div>
+            </div>
+          </div>
+          <a href="pets/index.html" class="btn btn__pets"
+            >Get to know the rest</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
