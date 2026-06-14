@@ -578,7 +578,7 @@ li {
   /* padding: 40px 0 60px; */
   gap: 71px;
   position: relative;
-  left: -1060px;
+  /* left: -1060px; */
 }
 
 .pets__btns_container {
@@ -717,6 +717,8 @@ li {
 }
 
 .pets-pic-4 {
+  background-position: 50% 50%;
+  background-size: cover;
   background-image: url(assets/img/pets/sophia.png);
 }
 
@@ -943,7 +945,7 @@ li {
 
 .footer__contacts {
   /* margin-top: 41px; */
-  margin-bottom: 40px;
+  margin-bottom: 27px;
 }
 
 .footer__contactbox {
@@ -1004,4 +1006,103 @@ li {
 
 .footer__contactbox-locations {
   margin-bottom: 32px;
+}
+/* -------- */
+/* our-pets */
+/* -------- */
+.our-pets .pets {
+  margin-top: 120px;
+}
+
+.our-pets .pets__slider {
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 11px 40px;
+  max-width: 1200px;
+}
+.our-pets .pets__item {
+  margin: 20px 0 0 0;
+  padding-bottom: 30px;
+}
+
+.our-pets__slider__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 340px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 57px;
+}
+
+.our-pets .slider__btn {
+  font-family: var(--ff-serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: hsl(var(--color-dark-s));
+}
+
+.our-pets .slider__btn-first--left {
+  border: 2px solid var(--color-dark-s);
+}
+
+.our-pets .slider__btn {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: hsl(var(--color-dark-s));
+}
+
+.our-pets .slider__btn--left {
+  border: 2px solid hsl(var(--color-dark-s));
+}
+
+.our-pets .slider__btn-center {
+  background: hsl(var(--color-primary));
+  color: hsl(var(--color-dark-3xl));
+}
+
+.our-pets .slider__btn-right {
+  color: hsl(var(--color-dark-3xl));
+}
+
+.our-pets .header__navitem {
+  color: hsl(var(--color-dark-l));
+}
+.our-pets .header__navitem:hover {
+  color: hsl(var(--color-dark-3xl));
+}
+.our-pets .header__content {
+  padding-bottom: 30px;
+}
+.our-pets .header__burger-line,
+.our-pets .header__burger::before,
+.our-pets .header__burger::after {
+  background-color: #000;
+}
+
+.our-pets .pets__item {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+.slider__btn--left:disabled {
+  color: #cdcdcd;
+  cursor: unset;
+  background: #f6f6f6;
+  border: 2px solid #cdcdcd;
 }
