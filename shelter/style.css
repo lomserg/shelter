@@ -249,7 +249,9 @@ li {
   width: 100%;
   margin-top: 30px;
 }
-
+.header__background {
+  display: flex;
+}
 .header__logo {
   display: flex;
   flex-direction: column;
@@ -563,7 +565,8 @@ li {
 
 .slider__wrapper {
   width: 92.8%;
-  margin: 0 20px;
+  width: 990px;
+  /* margin: 0 20px; */
   overflow: hidden;
 }
 
@@ -572,8 +575,8 @@ li {
   align-items: center;
   justify-content: start;
   width: 100%;
-  padding: 40px 0 60px;
-  gap: 90px;
+  /* padding: 40px 0 60px; */
+  gap: 71px;
   position: relative;
   left: -1060px;
 }
