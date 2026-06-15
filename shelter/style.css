@@ -781,6 +781,10 @@ li {
 }
 
 /* help */
+.no-click {
+  pointer-events: none;
+  cursor: default;
+}
 
 .help__container {
   display: flex;
