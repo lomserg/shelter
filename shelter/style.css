@@ -557,9 +557,15 @@ li {
     margin-left: 37px;
     align-self: auto;
   }
-  /* .header__burger {
-    right: 20px;
-  } */
+
+  @media (max-width: 325px) {
+    .header__content {
+      padding: 0 20px;
+    }
+    .header__burger {
+      right: 20px;
+    }
+  }
 }
 /* about */
 
@@ -947,7 +953,7 @@ li {
 @media (max-width: 1120px) {
   .pets__slider {
     column-gap: 40px;
-    left: -620px;
+    /* left: -620px; */
   }
   .pets__all {
     column-gap: 40px;
@@ -996,6 +1002,7 @@ li {
     align-items: center;
     justify-content: center;
     } */
+
   .pets__slider__btns {
     width: 57%;
     top: 80%;
@@ -1079,12 +1086,13 @@ li {
     padding-bottom: 12px;
   }
   .help__item {
-    width: 130px;
+    width: 139px;
     margin: 0;
     margin-bottom: 30px;
   }
   .help__item img {
     width: 50px;
+    height: 50px;
     margin-bottom: 16px;
   }
   .help__text {
@@ -1292,6 +1300,50 @@ li {
   align-items: center;
 }
 
+/* .footer__contactbox-locations {
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
+.footer__contactbox {
+  margin: 39px 0 34px;
+  display: flex;
+  align-items: center;
+}
+.footer__locations {
+  width: 302px;
+}
+
+.footer__icon {
+  width: 40px;
+}
+
+.footer__contact {
+  font-family: var(--ff-serif);
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(var(--color-primary));
+  margin-left: 20px;
+}
+
+.footer__geoicon {
+  width: 22px;
+}
+
+.footer__contacts {
+  width: 280px;
+}
+
+.footer__locations-title {
+  margin-bottom: 32px;
+}
+
+.footer__contactbox-locations {
+  margin-bottom: 32px;
+}
+
 @media (max-width: 60rem) {
   .footer__container {
     width: 91%;
@@ -1338,8 +1390,8 @@ li {
   }
   .footer__title {
     text-align: center;
-    margin-top: 6px;
-    margin-bottom: 29px;
+    margin-top: 9px;
+    margin-bottom: 26px;
   }
 
   .footer__contacts {
@@ -1348,8 +1400,8 @@ li {
     align-items: center;
   }
   .footer__contactbox {
-    margin-top: 10px;
-    margin-bottom: 28px;
+    margin-top: 15px;
+    margin-bottom: 23px;
   }
   .footer__contacts {
     margin-top: 10px;
@@ -1361,8 +1413,8 @@ li {
     margin-bottom: 28px;
   }
   .footer__contactbox-locations {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
     width: 100%;
   }
   .footer__locations {
@@ -1386,53 +1438,10 @@ li {
     height: 269px;
   }
   .footer__contactbox-locations {
-    margin-top: 10px;
+    margin-top: 11px;
     margin-bottom: 29px;
     width: 100%;
   }
-}
-/* .footer__contactbox-locations {
-    margin-top: 15px;
-    margin-bottom: 15px;
-} */
-.footer__contactbox {
-  margin: 39px 0 34px;
-  display: flex;
-  align-items: center;
-}
-.footer__locations {
-  width: 302px;
-}
-
-.footer__icon {
-  width: 40px;
-}
-
-.footer__contact {
-  font-family: var(--ff-serif);
-  font-size: 20px;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-  font-weight: 400;
-  font-style: normal;
-  color: hsl(var(--color-primary));
-  margin-left: 20px;
-}
-
-.footer__geoicon {
-  width: 22px;
-}
-
-.footer__contacts {
-  width: 280px;
-}
-
-.footer__locations-title {
-  margin-bottom: 32px;
-}
-
-.footer__contactbox-locations {
-  margin-bottom: 32px;
 }
 /* -------- */
 /* our-pets */
@@ -1557,11 +1566,37 @@ li {
   }
 }
 
+@media (max-width: 768rem) {
+  .our-pets .pets-h2 {
+    width: 65%;
+    margin-bottom: 10px;
+  }
+
+  .our-pets__slider__btns {
+    max-width: 335px;
+  }
+  .our-pets .pets__container {
+    padding-bottom: 77px;
+  }
+  .our-pets .pets__slider {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 40rem) {
   .our-pets .pets-h2 {
-    width: 93%;
-    margin-bottom: 22px;
+    width: 96%;
+    margin-bottom: 10px;
   }
+  .our-pets .pets__slider {
+    left: 0;
+  }
+
+  .our-pets .pets__item {
+    margin: 34px 0 0 0;
+    padding-bottom: 16px;
+  }
+
   .our-pets .pets__item:nth-last-child(3) {
     display: none;
   }
@@ -1571,11 +1606,13 @@ li {
   .our-pets .pets__item:nth-last-child(5) {
     display: none;
   }
-
   .our-pets__slider__btns {
     max-width: 300px;
   }
   .our-pets .pets__container {
-    padding-bottom: 46px;
+    padding-bottom: 42px;
+  }
+  .our-pets__slider__btns {
+    margin-top: 55px;
   }
 }
