@@ -17,46 +17,59 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <script src="../js/app.js" defer></script>
+    <script src="../js/pets.js" defer></script>
     <title>Pets</title>
   </head>
   <body class="our-pets" id="our-pets">
     <header class="header">
       <div class="header__content container flex">
         <div class="header__logo">
-          <a class="header__logotitle clr-dark--l" href="../index.html"
-            >Cozy House</a
-          >
-          <span class="header__logosubtitle clr-dark--3xl"
-            >Shelter for pets in Boston</span
-          >
+          <a class="header__logotitle clr-dark--l" href="../index.html">
+            Cozy House
+          </a>
+          <span class="header__logosubtitle clr-dark--3xl">
+            Shelter for pets in Boston
+          </span>
         </div>
-        <nav class="header__navcontainer flex">
-          <ul class="header__navlist">
-            <li>
-              <a class="header__navitem clr-dark--l" href="../index.html"
-                >About the shelter</a
-              >
-            </li>
-            <li>
-              <a
-                class="header__navitem clr-dark--l active no-click"
-                href="index.html"
-                >Our pets</a
-              >
-            </li>
-            <li>
-              <a class="header__navitem clr-dark--l" href="../index.html#help"
-                >Help the shelter</a
-              >
-            </li>
-            <li>
-              <a class="header__navitem clr-dark--l" href="#contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <button class="header__burger header__burger--hiden">
+
+        <div class="header__background">
+          <nav class="header__navcontainer flex">
+            <ul class="header__navlist">
+              <li>
+                <a class="header__navitem clr-dark--l" href="../index.html">
+                  About the shelter
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="header__navitem clr-dark--l active no-click"
+                  href="index.html"
+                >
+                  Our pets
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="header__navitem clr-dark--l"
+                  href="../index.html#help"
+                >
+                  Help the shelter
+                </a>
+              </li>
+
+              <li>
+                <a class="header__navitem clr-dark--l" href="#contacts">
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <button class="header__burger">
           <span class="header__burger-line"></span>
         </button>
       </div>
@@ -127,13 +140,15 @@
           </div>
           <!-- end slider -->
           <div class="our-pets__slider__btns">
-            <button disabled class="slider__btn slider__btn--left">
-              &lt;&lt;
-            </button>
-            <button disabled class="slider__btn slider__btn--left">&lt;</button>
-            <button class="slider__btn slider__btn-center">1</button>
-            <button class="slider__btn slider__btn-right">></button>
-            <button class="slider__btn slider__btn-right">>></button>
+            <button class="slider__btn first">&lt;&lt;</button>
+
+            <button class="slider__btn prev">&lt;</button>
+
+            <button class="slider__btn current">1</button>
+
+            <button class="slider__btn next">&gt;</button>
+
+            <button class="slider__btn last">&gt;&gt;</button>
           </div>
         </div>
       </section>

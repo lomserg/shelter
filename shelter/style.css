@@ -865,7 +865,50 @@ li {
   color: hsl(var(--color-dark-l));
   margin: 29px 0 30px;
 }
-.pets-pic-1 {
+
+.slider__wrapper {
+  overflow: hidden;
+}
+
+.pets__slider {
+  display: flex;
+}
+
+.pets__all {
+  min-width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.transition-right {
+  animation: moveRight 0.5s;
+}
+
+.transition-left {
+  animation: moveLeft 0.5s;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* .pets-pic-1 {
   background-image: url(assets/img/pets/katrine.png);
 }
 
@@ -953,7 +996,6 @@ li {
 @media (max-width: 1120px) {
   .pets__slider {
     column-gap: 40px;
-    /* left: -620px; */
   }
   .pets__all {
     column-gap: 40px;
@@ -969,11 +1011,7 @@ li {
   .pets__item:nth-last-child(1) {
     display: none;
   }
-  /* .pets__slider {
-    column-gap: 35px;
-    align-items: center;
-    justify-content: center;
-    } */
+
   .pets__slider__btns {
     width: 93%;
     top: 52%;
@@ -997,11 +1035,6 @@ li {
   .pets__item:nth-last-child(2) {
     display: none;
   }
-  /* .pets__slider {
-    column-gap: 35px;
-    align-items: center;
-    justify-content: center;
-    } */
 
   .pets__slider__btns {
     width: 57%;
@@ -1014,7 +1047,7 @@ li {
   .btn__pets {
     margin-top: 98px;
   }
-}
+} */
 /* help */
 .no-click {
   pointer-events: none;
