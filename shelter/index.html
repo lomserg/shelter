@@ -19,7 +19,7 @@
     />
     <script src="./js/app.js" defer></script>
     <script src="./js/slider.js" defer></script>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" defer></script>
 
     <title>Shelter | main page</title>
   </head>
@@ -119,114 +119,11 @@
           </div>
           <div class="slider__wrapper">
             <div class="pets__slider" id="pets__slider">
-              <!--pets__group1  -->
-              <div class="pets__all pets__group1">
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/katrine.png" alt="Katrine" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Katrine</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/jennifer.png" alt="jennifer" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Jennifer</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/woody.png" alt="Woody" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Woody</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- pets__group2 -->
-              <div class="pets__all pets__group2">
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/katrine.png" alt="Katrine" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Katrine</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/jennifer.png" alt="jennifer" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Jennifer</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/woody.png" alt="Woody" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Woody</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- pets__group3 -->
-              <div class="pets__all pets__group3">
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/katrine.png" alt="Katrine" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Katrine</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/jennifer.png" alt="jennifer" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Jennifer</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="pets__item">
-                  <div class="pets__pic">
-                    <img src="./assets/img/pets/woody.png" alt="Woody" />
-                  </div>
-                  <div class="pets__content">
-                    <div class="pets__label">
-                      <h3 class="pets__title">Woody</h3>
-                      <button class="pets__btn button">Learn more</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="pets__all pets__group1"></div>
+
+              <div class="pets__all pets__group2"></div>
+
+              <div class="pets__all pets__group3"></div>
             </div>
           </div>
           <a href="pets/index.html" class="btn btn__pets"
@@ -394,31 +291,24 @@
         <img class="footer__dog" src="assets/img/footer-puppy.png" alt="" />
       </div>
     </footer>
-       <div class="modal__info">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <button class="modal__close">×</button>
 
+        <div class="modal__content">
+          <div class="modal__img"></div>
 
-        <h2 class="modal__title"></h2>
+          <div class="modal__info">
+            <h2 class="modal__title"></h2>
 
+            <h3 class="modal__subtitle"></h3>
 
-        <h3 class="modal__subtitle"></h3>
+            <p class="modal__description"></p>
 
-
-        <p class="modal__description"></p>
-
-
-        <ul class="modal__list">
-
-        </ul>
-
-
+            <ul class="modal__list"></ul>
+          </div>
+        </div>
       </div>
-
-
     </div>
-
-
-  </div>
-
-</div>
   </body>
 </html>
