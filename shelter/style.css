@@ -807,33 +807,7 @@ li {
   border-radius: 9px 9px 0px 0px;
   transition: all 0.5s ease;
 }
-@keyframes move-right {
-  from {
-    left: -990px;
-  }
-  to {
-    left: -1980px;
-  }
-}
 
-.transition-right {
-  animation-name: move-right;
-  animation-duration: 1s;
-}
-
-@keyframes move-left {
-  from {
-    left: -990px;
-  }
-  to {
-    left: -0px;
-  }
-}
-
-.transition-left {
-  animation-name: move-left;
-  animation-duration: 1s;
-}
 /* .pets__pic {
     width: 270px;
     height: 270px;
