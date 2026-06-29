@@ -116,9 +116,9 @@ initSlider();
 
 function getCurrent() {
   return [...itemCenter.children].map((card) => {
-    let name = card.querySelector(".pets__title").textContent;
+    const name = card.querySelector(".pets__title").textContent.trim();
 
-    return data.findIndex((pet) => pet.title === name);
+    return data.findIndex((pet) => pet.name === name);
   });
 }
 
