@@ -101,18 +101,16 @@ function render(group, arr) {
 function initSlider() {
   itemSize();
 
-  let center = getRandomPets([]);
+  let center = getRandomPets();
 
   let left = getRandomPets(center);
 
-  let right = getRandomPets([...center, ...left]);
+  let right = getRandomPets(center);
 
   render(itemLeft, left);
   render(itemCenter, center);
   render(itemRight, right);
 }
-
-initSlider();
 
 function getCurrent() {
   return [...itemCenter.children].map((card) => {
@@ -123,6 +121,7 @@ function getCurrent() {
 }
 
 function moveRight() {
+  console.log("RIGHT");
   if (isMoving) return;
 
   isMoving = true;
@@ -144,8 +143,7 @@ function moveRight() {
 
       itemCenter.innerHTML = itemRight.innerHTML;
 
-      render(itemRight, getRandomPets([...current, ...next]));
-
+      render(itemRight, getRandomPets(next));
       isMoving = false;
     },
     { once: true },
@@ -153,13 +151,33 @@ function moveRight() {
 }
 
 function moveLeft() {
+  console.log(
+    "CENTER",
+    [...itemCenter.querySelectorAll(".pets__title")].map((e) =>
+      e.textContent.trim(),
+    ),
+  );
+
+  console.log(
+    "LEFT",
+    [...itemLeft.querySelectorAll(".pets__title")].map((e) =>
+      e.textContent.trim(),
+    ),
+  );
+
+  console.log(
+    "RIGHT",
+    [...itemRight.querySelectorAll(".pets__title")].map((e) =>
+      e.textContent.trim(),
+    ),
+  );
   if (isMoving) return;
 
   isMoving = true;
 
-  let current = getCurrent();
+  const current = getCurrent();
 
-  let prev = getRandomPets(current);
+  const prev = getRandomPets(current);
 
   render(itemLeft, prev);
 
@@ -170,18 +188,20 @@ function moveLeft() {
     () => {
       petsCarousel.classList.remove("transition-left");
 
+      // переносим группы
       itemRight.innerHTML = itemCenter.innerHTML;
 
       itemCenter.innerHTML = itemLeft.innerHTML;
 
-      render(itemLeft, getRandomPets([...current, ...prev]));
-
+      // новая левая группа
+      render(itemLeft, getRandomPets(prev));
       isMoving = false;
     },
-    { once: true },
+    {
+      once: true,
+    },
   );
 }
-
 btnSliderRight.addEventListener("click", moveRight);
 
 btnSliderLeft.addEventListener("click", moveLeft);
