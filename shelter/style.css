@@ -888,6 +888,29 @@ li {
   animation: moveLeft 0.5s;
 }
 
+.pets__btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 42px;
+  width: 187px;
+  height: 52px;
+  border: 2px solid hsl(var(--color-primary));
+  border-radius: 100px;
+  font-family: var(--ff-serif);
+  font-size: 17px;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: hsl(var(--color-dark-3xl));
+  background: transparent;
+}
+
+.pets__btn:hover {
+  background: hsl(var(--color-primary-light));
+  color: hsl(var(--color-dark-3xl));
+  border-color: hsl(var(--color-primary-light));
+}
 @keyframes moveRight {
   from {
     transform: translateX(0);
@@ -941,29 +964,7 @@ li {
 .pets-pic-8 {
   background-image: url(assets/img/pets/freddie.png);
 }
-.pets__btn {
-  display: flex;
-  align-items: center;
-  padding: 15px 42px;
-  width: 187px;
-  height: 52px;
-  border: 2px solid hsl(var(--color-primary));
-  border-radius: 100px;
-  font-family: var(--ff-serif);
-  font-size: 17px;
-  line-height: 130%;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.06em;
-  color: hsl(var(--color-dark-3xl));
-  background: transparent;
-}
 
-.pets__btn:hover {
-  background: hsl(var(--color-primary-light));
-  color: hsl(var(--color-dark-3xl));
-  border-color: hsl(var(--color-primary-light));
-}
 
 .slider__btn:hover {
   background: hsl(var(--color-primary-light));
