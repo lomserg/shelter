@@ -91,7 +91,7 @@ function createCard(pet) {
 <div class="pets__pic">
 
 <img 
-src="../assets/img/pets/${pet.img}"
+src="../${pet.img}"
 alt="${pet.name}">
 
 </div>
