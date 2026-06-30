@@ -44,13 +44,17 @@ function initModal() {
     openModal(pet);
   });
 }
+
 function openModal(pet) {
-  console.log(pet);
+  let imgPath = pet.img;
+
+  if (location.pathname.includes("pets")) {
+    imgPath = "../" + pet.img;
+  }
+
   modalImg.innerHTML = `
-
-<img src="${pet.img}" alt="${pet.name}">
-
-`;
+    <img src="${imgPath}" alt="${pet.name}">
+  `;
 
   modalTitle.textContent = pet.name;
 
@@ -59,36 +63,28 @@ function openModal(pet) {
   modalDescription.textContent = pet.description;
 
   modalList.innerHTML = `
+    <li>
+      <strong>Age:</strong>
+      ${pet.age}
+    </li>
 
+    <li>
+      <strong>Inoculations:</strong>
+      ${pet.inoculations.join(", ")}
+    </li>
 
-<li>
-<strong>Age:</strong>
-${pet.age}
-</li>
+    <li>
+      <strong>Diseases:</strong>
+      ${pet.diseases.join(", ")}
+    </li>
 
-
-<li>
-<strong>Inoculations:</strong>
-${pet.inoculations.join(", ")}
-</li>
-
-
-<li>
-<strong>Diseases:</strong>
-${pet.diseases.join(", ")}
-</li>
-
-
-<li>
-<strong>Parasites:</strong>
-${pet.parasites.join(", ")}
-</li>
-
-
-`;
+    <li>
+      <strong>Parasites:</strong>
+      ${pet.parasites.join(", ")}
+    </li>
+  `;
 
   modal.classList.add("active");
-
   document.body.classList.add("no-scroll");
 }
 
